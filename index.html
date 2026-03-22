@@ -3,79 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>i5-13400F + RTX 5060 游戏主机配置单 | 2026</title>
+<title>i5-13400F + RTX 5060 华硕雪豹游戏主机配置单 | 2026</title>
 <meta name="description" content="intel i5-13400F + 华硕 RTX 5060 雪豹游戏主机详细配置清单，含价格、参数与购买建议">
 <style>
-:root{--bg:#f5f7ff;--surface:#ffffff;--surface2:#eef1fb;--surface3:#e4e8f5;--border:#d0d5ee;--accent:#2563eb;--accent2:#7c3aed;--accent3:#059669;--accent4:#f59e0b;--text:#1a1a2e;--text2:#4a5080;--text3:#8890b0;--blue:#2563eb;--red:#dc2626;--gold:#f59e0b}
+:root{--bg:#f4f7ff;--surface:#ffffff;--surface2:#eef1fb;--surface3:#e6eaff;--border:#cdd2f0;--accent:#2563eb;--accent2:#7c3aed;--accent3:#059669;--text:#1a1a2e;--text2:#4a5080;--text3:#8890b0;--blue:#2563eb;--shadow:rgba(37,99,235,0.08)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI','PingFang SC','Microsoft YaHei',system-ui,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}
-a{color:var(--blue);text-decoration:none}
-a:hover{text-decoration:underline}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-@keyframes glow{0%,100%{box-shadow:0 4px 24px rgba(37,99,235,0.15)}50%{box-shadow:0 4px 36px rgba(37,99,235,0.25)}}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{box-shadow:0 4px 24px var(--shadow)}50%{box-shadow:0 4px 36px rgba(37,99,235,0.18)}}
 
-/* Nav */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(37,99,235,0.06)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 2px 12px rgba(37,99,235,0.05)}
 .nav-brand{font-weight:800;font-size:16px;color:var(--blue);letter-spacing:.05em}
 .nav-links{display:flex;gap:4px;list-style:none}
 .nav-links a{color:var(--text2);text-decoration:none;font-size:13px;padding:6px 14px;border-radius:8px;transition:all .2s;font-weight:500}
 .nav-links a:hover{background:var(--surface2);color:var(--blue)}
 
-/* Hero */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden;background:linear-gradient(160deg,#eff6ff 0%,#fafbff 50%,#f0f4ff 100%)}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(37,99,235,0.07) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 85% 70%,rgba(124,58,237,0.05) 0%,transparent 50%);pointer-events:none}
 .hero-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(37,99,235,0.05) 1px,transparent 0);background-size:40px 40px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:100px;margin-bottom:32px;animation:fadeInUp .8s ease;position:relative}
-.hero h1{position:relative;font-size:clamp(30px,7vw,64px);font-weight:900;letter-spacing:-.04em;line-height:1.05;margin-bottom:18px;animation:fadeInUp 1s ease;background:linear-gradient(135deg,#1a1a2e 30%,#2563eb 70%,#7c3aed 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{position:relative;font-size:clamp(14px,2vw,17px);color:var(--text2);max-width:520px;margin-bottom:44px;animation:fadeInUp 1s ease .2s both}
+.hero h1{position:relative;font-size:clamp(28px,7vw,60px);font-weight:900;letter-spacing:-.04em;line-height:1.1;margin-bottom:18px;animation:fadeInUp 1s ease;background:linear-gradient(135deg,#1a1a2e 30%,#2563eb 70%,#7c3aed 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{position:relative;font-size:clamp(13px,2vw,16px);color:var(--text2);max-width:520px;margin-bottom:44px;animation:fadeInUp 1s ease .2s both}
 .hero-tags{position:relative;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:52px;animation:fadeInUp 1s ease .3s both}
 .hero-tag{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--text2);font-weight:500;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
 .hero-tag:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);box-shadow:0 4px 16px rgba(37,99,235,0.1)}
 .hero-tag .icon{font-size:15px}
-.hero-price{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:32px 52px;display:inline-block;box-shadow:0 4px 24px rgba(37,99,235,0.08);animation:fadeInUp 1s ease .5s both;animation:glow 4s ease-in-out infinite;position:relative;overflow:hidden}
+.hero-price{position:relative;background:var(--surface);border:2px solid rgba(37,99,235,0.15);border-radius:24px;padding:32px 52px;display:inline-block;box-shadow:0 4px 24px var(--shadow);animation:fadeInUp 1s ease .5s both;position:relative;overflow:hidden}
 .hero-price::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--accent2))}
 .price-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:8px}
 .price-amount{font-size:clamp(38px,8vw,68px);font-weight:900;color:var(--blue);line-height:1;letter-spacing:-.03em}
 .price-amount .yuan{font-size:.4em;color:var(--text2);font-weight:600}
 .price-note{font-size:12px;color:var(--text3);margin-top:8px;font-weight:500}
 
-/* Parts */
 .parts-section{max-width:1100px;margin:0 auto;padding:80px 24px;position:relative;z-index:1}
 .section-label{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
-.section-title{font-size:clamp(22px,4vw,36px);font-weight:800;letter-spacing:-.03em;margin-bottom:12px;color:var(--text)}
+.section-title{font-size:clamp(22px,4vw,36px);font-weight:800;letter-spacing:-.03em;margin-bottom:12px}
 .section-intro{font-size:15px;color:var(--text2);max-width:600px;margin-bottom:48px;line-height:1.8}
+
 .part-list{display:flex;flex-direction:column;gap:14px}
-.part-card{display:grid;grid-template-columns:80px 120px 1fr auto;align-items:center;gap:20px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 22px;transition:all .25s;box-shadow:0 2px 8px rgba(37,99,235,0.04)}
-.part-card:hover{border-color:rgba(37,99,235,0.3);box-shadow:0 6px 24px rgba(37,99,235,0.1);transform:translateY(-2px)}
-.part-img{width:100px;height:75px;object-fit:contain;border-radius:10px;background:var(--surface2);border:1px solid var(--border);padding:6px;display:block;transition:transform .3s}
-.part-card:hover .part-img{transform:scale(1.05)}
-.part-rank{font-size:24px;font-weight:900;color:var(--border);text-align:center;line-height:1;transition:color .2s}
+.part-card{display:grid;grid-template-columns:88px 110px 1fr auto;align-items:center;gap:20px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 22px;transition:all .25s;box-shadow:0 2px 8px var(--shadow)}
+.part-card:hover{border-color:rgba(37,99,235,0.3);box-shadow:0 8px 28px rgba(37,99,235,0.1);transform:translateY(-2px)}
+
+.part-img-wrap{width:100px;height:75px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0}
+.part-img-wrap svg{width:70px;height:55px}
+
+.part-rank{font-size:24px;font-weight:900;color:var(--border);text-align:center;line-height:1;transition:color .2s;flex-shrink:0}
 .part-card:hover .part-rank{color:var(--blue)}
 .part-info{min-width:0}
-.part-category{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:2px;font-weight:800}
+.part-category{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--blue);margin-bottom:2px}
 .part-name{font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .part-specs{font-size:12px;color:var(--text2);line-height:1.5}
 .part-price{text-align:right;flex-shrink:0}
 .part-price-amount{font-size:20px;font-weight:800;color:var(--text);white-space:nowrap}
 .part-price-unit{font-size:10px;color:var(--text3);display:block;text-align:right}
 
-/* Total */
-.total-card{background:linear-gradient(135deg,#eff6ff,#f5f3ff);border:2px solid rgba(37,99,235,0.2);border-radius:20px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-top:24px;box-shadow:0 4px 24px rgba(37,99,235,0.08)}
+.total-card{background:linear-gradient(135deg,#eff6ff,#f5f3ff);border:2px solid rgba(37,99,235,0.18);border-radius:20px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-top:24px;box-shadow:0 4px 24px var(--shadow)}
 .total-left .total-label{font-size:14px;font-weight:700;color:var(--text2);margin-bottom:4px}
-.total-left .total-note{font-size:12px;color:var(--text3)}
+.total-note{font-size:12px;color:var(--text3)}
 .total-right{text-align:right}
-.total-right .total-amount{font-size:clamp(30px,5vw,52px);font-weight:900;color:var(--blue);letter-spacing:-.03em}
-.total-right .total-amount .yuan{font-size:.4em;color:var(--text2);font-weight:600}
-.total-right .total-note{font-size:12px;color:var(--text3)}
+.total-amount{font-size:clamp(30px,5vw,52px);font-weight:900;color:var(--blue);letter-spacing:-.03em}
+.total-amount .yuan{font-size:.4em;color:var(--text2);font-weight:600}
 .total-breakdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px;padding-top:24px;border-top:1px solid var(--border)}
 .breakdown-item{text-align:center;padding:12px 8px;background:var(--surface2);border-radius:12px;border:1px solid var(--border)}
-.breakdown-item .b-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:4px}
-.breakdown-item .b-value{font-size:13px;font-weight:700;color:var(--text)}
+.b-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:4px}
+.b-value{font-size:13px;font-weight:700;color:var(--text)}
 
-/* Bench */
-.bench-section{background:var(--surface2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 24px;position:relative}
+.bench-section{background:var(--surface2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 24px}
 .bench-inner{max-width:1100px;margin:0 auto}
 .bench-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:32px}
 .bench-game{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .2s}
@@ -84,13 +78,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;height:60px;d
 .bench-icon{font-size:28px;margin-bottom:4px;display:block}
 .bench-name{font-size:13px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bench-setting{font-size:11px;color:var(--text3)}
-.bench-fps{fadding:8px 16px;background:rgba(37,99,235,0.06);border:1px solid rgba(37,99,235,0.12);border-radius:10px;text-align:center;flex-shrink:0}
-.bench-fps .fps-num{font-size:22px;font-weight:900;color:var(--blue);line-height:1}
-.bench-fps .fps-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em}
-.bench-tip{background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.15);border-radius:12px;padding:16px 20px;margin-top:24px;display:flex;gap:12px;align-items:center;font-size:13px;color:var(--text2);line-height:1.6}
+.bench-fps{flex-shrink:0;padding:8px 14px;background:rgba(37,99,235,0.06);border:1px solid rgba(37,99,235,0.12);border-radius:10px;text-align:center}
+.fps-pre{font-size:11px;color:var(--text3);display:block;line-height:1.2;margin-bottom:1px}
+.fps-num{font-size:22px;font-weight:900;color:var(--blue);line-height:1;letter-spacing:-.02em}
+.bench-tip{background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.15);border-radius:12px;padding:16px 20px;margin-top:24px;display:flex;gap:12px;align-items:center;font-size:13px;color:var(--text2);line-height:1.7}
 .bench-tip .ti{font-size:20px;flex-shrink:0}
 
-/* Tips */
 .tips-section{max-width:1100px;margin:0 auto;padding:80px 24px;position:relative;z-index:1}
 .tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:32px}
 .tip-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;gap:14px;align-items:flex-start;transition:all .2s}
@@ -99,8 +92,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;height:60px;d
 .tip-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px}
 .tip-body{font-size:12px;color:var(--text2);line-height:1.6}
 
-/* CTA */
-.cta-section{text-align:center;padding:80px 24px;background:linear-gradient(160deg,#eff6ff,#f5f3ff);border-top:1px solid var(--border);position:relative;z-index:1}
+.cta-section{text-align:center;padding:80px 24px;background:linear-gradient(160deg,#eff6ff,#f5f3ff);border-top:1px solid var(--border)}
 .cta-title{font-size:clamp(22px,5vw,38px);font-weight:800;margin-bottom:14px}
 .cta-sub{font-size:15px;color:var(--text2);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
 .cta-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
@@ -110,29 +102,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;height:60px;d
 .cta-btn.secondary{background:var(--surface);border:1px solid var(--border);color:var(--text2)}
 .cta-btn.secondary:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-1px);text-decoration:none}
 
-/* Footer */
 footer{background:var(--surface);border-top:1px solid var(--border);padding:40px 24px;text-align:center}
 footer p{font-size:13px;color:var(--text3)}
 footer a{color:var(--blue);text-decoration:none}
 footer a:hover{text-decoration:underline}
 
-/* Scroll reveal */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
 .reveal.visible{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.08s}
 .reveal-delay-2{transition-delay:.16s}
-.reveal-delay-3{transition-delay:.24s}
 
-/* Responsive */
 @media(max-width:768px){
   .nav-links{display:none}
-  .part-card{grid-template-columns:70px 90px 1fr;gap:12px;padding:14px 16px}
-  .part-img{width:80px;height:60px}
-  .part-price{display:none}
+  .part-card{grid-template-columns:70px 1fr auto;gap:12px;padding:14px 16px}
+  .part-img-wrap{width:64px;height:48px}
+  .part-img-wrap svg{width:48px;height:36px}
   .hero-price{padding:24px 32px}
   .total-card{flex-direction:column;text-align:center}
   .total-right{text-align:center}
-  .total-right .total-note{text-align:center}
   .total-breakdown{grid-template-columns:repeat(2,1fr)}
 }
 </style>
@@ -151,19 +138,12 @@ footer a:hover{text-decoration:underline}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-pattern"></div>
-
   <div class="hero-badge">&#x1F3AE; 2026 年度推荐配置</div>
-
-  <h1>
-    i5-13400F + RTX 5060<br>
-    华硕雪豹 游戏主机
-  </h1>
-
+  <h1>i5-13400F + RTX 5060<br>华硕雪豹 游戏主机</h1>
   <p class="hero-sub">
     intel 13代 10核处理器 + NVIDIA RTX 50系显卡，畅玩 2K 分辨率 3A 大作，<br>
     黑科技 DLSS 4.0 加持，性能大幅超越上代甜品卡
   </p>
-
   <div class="hero-tags">
     <span class="hero-tag"><span class="icon">&#x1F4BB;</span> i5-13400F</span>
     <span class="hero-tag"><span class="icon">&#x1F3AE;</span> RTX 5060</span>
@@ -172,7 +152,6 @@ footer a:hover{text-decoration:underline}
     <span class="hero-tag"><span class="icon">&#x1F5C4;</span> DDR4 32GB</span>
     <span class="hero-tag"><span class="icon">&#x1F4F0;</span> 华硕雪豹</span>
   </div>
-
   <div class="hero-price">
     <div class="price-label">&#x2B50; 整机参考总价</div>
     <div class="price-amount">¥7,899<span class="yuan"> / 整机</span></div>
@@ -184,18 +163,34 @@ footer a:hover{text-decoration:underline}
 <div class="parts-section" id="parts">
   <div class="section-label"><span>&#x2699;</span> 完整配置单</div>
   <h2 class="section-title">零件清单 &amp; 详细参数</h2>
-  <p class="section-intro">所有零件均选用主流品牌热销型号，兼容性和稳定性经过市场验证，点击商品图片可跳转京东查看详情。</p>
+  <p class="section-intro">所有零件均选用主流品牌热销型号，兼容性和稳定性经过市场验证，可放心购买。</p>
 
   <div class="part-list">
 
+    <!-- 1. CPU -->
     <div class="part-card reveal">
       <div class="part-rank">1</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/123456/78/9102/12345/6789abcd/B1234567a.jpg!cc_100x100.webp" alt="Intel i5-13400F" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18" y="8" width="34" height="34" rx="3" fill="#1a1a2e"/>
+          <rect x="22" y="12" width="26" height="26" rx="2" fill="#2563eb"/>
+          <rect x="25" y="15" width="20" height="20" rx="1" fill="#1a1a2e"/>
+          <rect x="8" y="22" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="8" y="26" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="8" y="30" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="54" y="22" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="54" y="26" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="54" y="30" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="22" y="46" width="8" height="2" rx="1" fill="#999"/>
+          <rect x="32" y="46" width="8" height="2" rx="1" fill="#999"/>
+          <text x="35" y="30" text-anchor="middle" font-size="5" fill="#fff" font-weight="bold" font-family="sans-serif">Intel</text>
+          <text x="35" y="38" text-anchor="middle" font-size="5" fill="#aaddff" font-family="sans-serif">i5</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">CPU 处理器</div>
         <div class="part-name">Intel Core i5-13400F</div>
         <div class="part-specs">10核16线程 | 睿频 4.6GHz | LGA1700 | 无核显 | 65W TDP</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥970</div>
@@ -203,14 +198,35 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 2. 主板 -->
     <div class="part-card reveal">
       <div class="part-rank">2</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/234567/89/1234/5678/6789abcd/C2345678b.jpg!cc_100x100.webp" alt="技嘉 B760M" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="6" width="62" height="43" rx="3" fill="#1a3a1a"/>
+          <rect x="6" y="8" width="58" height="39" rx="2" fill="#2d5a2d"/>
+          <rect x="10" y="12" width="28" height="22" rx="2" fill="#1a2a1a" stroke="#4a8a4a" stroke-width="0.5"/>
+          <rect x="42" y="12" width="8" height="6" rx="1" fill="#333"/>
+          <rect x="52" y="12" width="8" height="6" rx="1" fill="#333"/>
+          <rect x="42" y="20" width="8" height="6" rx="1" fill="#333"/>
+          <rect x="52" y="20" width="8" height="6" rx="1" fill="#333"/>
+          <rect x="14" y="16" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="19" y="16" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="14" y="21" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="19" y="21" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="14" y="26" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="19" y="26" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <text x="35" y="44" text-anchor="middle" font-size="5" fill="#7cff7c" font-family="sans-serif" font-weight="bold">GIGABYTE B760M</text>
+          <rect x="8" y="37" width="4" height="4" rx="1" fill="#f59e0b"/>
+          <rect x="14" y="37" width="4" height="4" rx="1" fill="#f59e0b"/>
+          <rect x="20" y="37" width="4" height="4" rx="1" fill="#ef4444"/>
+          <rect x="26" y="37" width="4" height="4" rx="1" fill="#ef4444"/>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">主板</div>
         <div class="part-name">技嘉 B760M DS3H DDR4</div>
         <div class="part-specs">Micro-ATX | DDR4 | LGA1700 | B760芯片组 | 2×M.2 | PCIe 4.0</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥499</div>
@@ -218,14 +234,33 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 3. 散热器 -->
     <div class="part-card reveal">
       <div class="part-rank">3</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/345678/90/2345/6789/7890abcd/D3456789c.jpg!cc_100x100.webp" alt="6热管散热器" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="4" width="26" height="38" rx="4" fill="#2a2a3a"/>
+          <rect x="25" y="8" width="20" height="30" rx="3" fill="#1e1e2e"/>
+          <line x1="27" y1="14" x2="43" y2="14" stroke="#4a4a6a" stroke-width="1"/>
+          <line x1="27" y1="18" x2="43" y2="18" stroke="#4a4a6a" stroke-width="1"/>
+          <line x1="27" y1="22" x2="43" y2="22" stroke="#4a4a6a" stroke-width="1"/>
+          <line x1="27" y1="26" x2="43" y2="26" stroke="#4a4a6a" stroke-width="1"/>
+          <line x1="27" y1="30" x2="43" y2="30" stroke="#4a4a6a" stroke-width="1"/>
+          <line x1="27" y1="34" x2="43" y2="34" stroke="#4a4a6a" stroke-width="1"/>
+          <circle cx="35" cy="43" r="7" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+          <circle cx="35" cy="43" r="3" fill="#2563eb"/>
+          <rect x="12" y="19" width="8" height="16" rx="4" fill="#2563eb" opacity="0.7"/>
+          <rect x="50" y="19" width="8" height="16" rx="4" fill="#2563eb" opacity="0.7"/>
+          <rect x="13" y="24" width="6" height="2" rx="1" fill="#1a1a2e"/>
+          <rect x="13" y="28" width="6" height="2" rx="1" fill="#1a1a2e"/>
+          <rect x="51" y="24" width="6" height="2" rx="1" fill="#1a1a2e"/>
+          <rect x="51" y="28" width="6" height="2" rx="1" fill="#1a1a2e"/>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">散热器</div>
         <div class="part-name">核心 6 热管 CPU 散热器</div>
         <div class="part-specs">6×6mm 热管 | 塔式侧吹 | 12cm PWM 风扇 | 温控静音 | 兼容 LGA1700</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥159</div>
@@ -233,14 +268,29 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 4. 内存 -->
     <div class="part-card reveal">
       <div class="part-rank">4</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/456789/01/3456/7890/8901abcd/E4567890d.jpg!cc_100x100.webp" alt="金泰克 16G" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="12" width="26" height="30" rx="3" fill="#1a2a1a"/>
+          <rect x="10" y="14" width="22" height="26" rx="2" fill="#2563eb"/>
+          <rect x="13" y="18" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <rect x="13" y="24" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <rect x="13" y="30" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <rect x="36" y="12" width="26" height="30" rx="3" fill="#1a2a1a"/>
+          <rect x="38" y="14" width="22" height="26" rx="2" fill="#2563eb"/>
+          <rect x="41" y="18" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <rect x="41" y="24" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <rect x="41" y="30" width="16" height="4" rx="1" fill="#1a1a2e" opacity="0.6"/>
+          <text x="21" y="49" text-anchor="middle" font-size="5" fill="#fff" font-family="sans-serif">16GB</text>
+          <text x="49" y="49" text-anchor="middle" font-size="5" fill="#fff" font-family="sans-serif">16GB</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">内存 ×2条</div>
         <div class="part-name">金泰克 16GB DDR4 3200 × 2条</div>
         <div class="part-specs">DDR4 3200MHz | 16GB×2=32GB 双通道 | CL16 | 1.35V | 台式机</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥880<span style="font-size:13px;font-weight:500">×2</span></div>
@@ -248,14 +298,28 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 5. 硬盘 -->
     <div class="part-card reveal">
       <div class="part-rank">5</div>
-      <img class="part-img" src="https://img20.360buyimg.com/nfsmall/jfs/t1/215123/456/7890/123456/abc12345/Cdef1234.jpg!cc_100x100.webp" alt="金士顿 NV3" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="14" width="50" height="26" rx="4" fill="#1a1a2e"/>
+          <rect x="12" y="16" width="46" height="22" rx="3" fill="#2a2a4a"/>
+          <rect x="18" y="20" width="22" height="14" rx="2" fill="#111122" stroke="#2563eb" stroke-width="0.5"/>
+          <rect x="20" y="22" width="18" height="10" rx="1" fill="#0a0a1a"/>
+          <circle cx="51" cy="27" r="5" fill="#111"/>
+          <circle cx="51" cy="27" r="2" fill="#2563eb"/>
+          <rect x="44" y="20" width="3" height="3" rx="0.5" fill="#059669"/>
+          <rect x="44" y="25" width="3" height="3" rx="0.5" fill="#2563eb"/>
+          <rect x="44" y="30" width="3" height="3" rx="0.5" fill="#999"/>
+          <text x="29" y="30" text-anchor="middle" font-size="5" fill="#4ade80" font-family="sans-serif">NVMe</text>
+          <text x="35" y="48" text-anchor="middle" font-size="5" fill="#fff" font-family="sans-serif">Kingston NV3 1TB</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">固态硬盘</div>
         <div class="part-name">金士顿 NV3 NVMe PCIe 4.0 M.2 1TB</div>
         <div class="part-specs">PCIe Gen4×4 | 读 6000MB/s | 写 5000MB/s | M.2 2280 | HBM+SLC缓存</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥1,200</div>
@@ -263,14 +327,34 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 6. 显卡 -->
     <div class="part-card reveal">
       <div class="part-rank">6</div>
-      <img class="part-img" src="https://img20.360buyimg.com/nfsmall/jfs/t1/189012/345/6789/012345/678901ab/Cdef9012.jpg!cc_100x100.webp" alt="华硕 RTX 5060 雪豹" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="18" width="62" height="22" rx="3" fill="#1a1a2e"/>
+          <rect x="6" y="20" width="58" height="18" rx="2" fill="#2a2a3e"/>
+          <rect x="8" y="22" width="20" height="14" rx="2" fill="#111" stroke="#2563eb" stroke-width="0.5"/>
+          <rect x="10" y="24" width="16" height="10" rx="1" fill="#0a0a1a"/>
+          <text x="18" y="32" text-anchor          <text x="18" y="32" text-anchor="middle" font-size="4" fill="#4ade80" font-family="sans-serif">RTX</text>
+          <rect x="30" y="24" width="4" height="10" rx="1" fill="#2563eb"/>
+          <rect x="36" y="24" width="4" height="10" rx="1" fill="#7c3aed"/>
+          <rect x="42" y="24" width="4" height="10" rx="1" fill="#2563eb"/>
+          <rect x="48" y="24" width="4" height="10" rx="1" fill="#7c3aed"/>
+          <rect x="54" y="24" width="4" height="10" rx="1" fill="#2563eb"/>
+          <rect x="8" y="42" width="54" height="4" rx="1" fill="#333"/>
+          <rect x="10" y="43" width="10" height="2" rx="0.5" fill="#2563eb"/>
+          <rect x="22" y="43" width="8" height="2" rx="0.5" fill="#7c3aed"/>
+          <rect x="32" y="43" width="8" height="2" rx="0.5" fill="#2563eb"/>
+          <rect x="42" y="43" width="8" height="2" rx="0.5" fill="#7c3aed"/>
+          <rect x="52" y="43" width="6" height="2" rx="0.5" fill="#2563eb"/>
+          <text x="35" y="52" text-anchor="middle" font-size="4.5" fill="#fff" font-family="sans-serif" font-weight="bold">ASUS RTX 5060 DUAL</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">显卡</div>
         <div class="part-name">华硕 DUAL RTX 5060 雪豹 OC</div>
         <div class="part-specs">NVIDIA Blackwell | 8GB GDDR7 | DLSS 4.0 | 光追 | 双风扇 | 低功耗</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥2,882</div>
@@ -278,14 +362,30 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 7. 电源 -->
     <div class="part-card reveal">
       <div class="part-rank">7</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/567890/12/4567/8901/9012abcd/F5678901f.jpg!cc_100x100.webp" alt="Acer 650W 电源" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="12" width="50" height="30" rx="4" fill="#2a2a2a"/>
+          <rect x="12" y="14" width="46" height="26" rx="3" fill="#333"/>
+          <rect x="16" y="20" width="12" height="8" rx="2" fill="#111"/>
+          <circle cx="22" cy="24" r="3" fill="#1a1a1a"/>
+          <circle cx="22" cy="24" r="2" fill="#f59e0b"/>
+          <rect x="32" y="18" width="8" height="4" rx="1" fill="#555"/>
+          <rect x="32" y="24" width="8" height="4" rx="1" fill="#555"/>
+          <rect x="32" y="30" width="8" height="4" rx="1" fill="#555"/>
+          <rect x="44" y="18" width="10" height="4" rx="1" fill="#2563eb"/>
+          <rect x="44" y="24" width="10" height="4" rx="1" fill="#059669"/>
+          <rect x="44" y="30" width="10" height="4" rx="1" fill="#f59e0b"/>
+          <text x="35" y="48" text-anchor="middle" font-size="4.5" fill="#fff" font-family="sans-serif">ACER 650W 80+ Bronze</text>
+          <text x="35" y="10" text-anchor="middle" font-size="5" fill="#999" font-family="sans-serif">650W</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">电源</div>
         <div class="part-name">Acer 650W 80PLUS 铜牌 额定650W</div>
         <div class="part-specs">80PLUS 铜牌 | 650W | 主动式 PFC | 12V单路 | 120mm风扇 | 5年质保</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥290</div>
@@ -293,14 +393,32 @@ footer a:hover{text-decoration:underline}
       </div>
     </div>
 
+    <!-- 8. 机箱 -->
     <div class="part-card reveal">
       <div class="part-rank">8</div>
-      <img class="part-img" src="https://img20.360buyimg.com/n1/jfs/t1/678901/23/5678/9012/0123abcd/G6789012g.jpg!cc_100x100.webp" alt="电竞侧透机箱" onerror="this.style.display='none'">
+      <div class="part-img-wrap">
+        <svg viewBox="0 0 70 55" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="4" width="46" height="44" rx="4" fill="#1a1a2e"/>
+          <rect x="14" y="6" width="42" height="40" rx="3" fill="#252535"/>
+          <rect x="16" y="8" width="38" height="28" rx="2" fill="#0a0a15" opacity="0.6"/>
+          <rect x="16" y="8" width="38" height="28" rx="2" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.4"/>
+          <rect x="20" y="12" width="10" height="3" rx="1" fill="#2563eb" opacity="0.5"/>
+          <rect x="20" y="17" width="6" height="3" rx="1" fill="#059669" opacity="0.5"/>
+          <rect x="20" y="22" width="8" height="3" rx="1" fill="#f59e0b" opacity="0.5"/>
+          <rect x="20" y="27" width="5" height="3" rx="1" fill="#999" opacity="0.4"/>
+          <rect x="20" y="38" width="30" height="4" rx="1" fill="#333"/>
+          <rect x="20" y="38" width="8" height="4" rx="1" fill="#2563eb" opacity="0.6"/>
+          <rect x="30" y="38" width="6" height="4" rx="1" fill="#7c3aed" opacity="0.6"/>
+          <rect x="38" y="38" width="12" height="4" rx="1" fill="#333"/>
+          <circle cx="54" cy="14" r="4" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+          <circle cx="54" cy="14" r="2" fill="#2563eb" opacity="0.8"/>
+          <text x="35" y="52" text-anchor="middle" font-size="4.5" fill="#fff" font-family="sans-serif">ATX Mid-Tower Case</text>
+        </svg>
+      </div>
       <div class="part-info">
         <div class="part-category">机箱</div>
         <div class="part-name">电竞侧透 ATX 机箱</div>
         <div class="part-specs">ATX 中塔 | 侧透钢化玻璃 | 支持 M-ATX/ATX | 显卡限长 320mm</div>
-        <div style="margin-top:8px"><a href="https://www.jd.com" target="_blank" style="font-size:12px;color:var(--blue);font-weight:600">&#x1F50D; 查看商品 &rarr;</a></div>
       </div>
       <div class="part-price">
         <div class="part-price-amount">¥139</div>
@@ -314,7 +432,7 @@ footer a:hover{text-decoration:underline}
   <div class="total-card reveal">
     <div class="total-left">
       <div class="total-label">&#x1F4B0; 整机参考总价</div>
-      <div class="total-note">&#x2139; 各平台实时价格有浮动，建议大型活动期间入手</div>
+      <div class="total-note">&#x2139; 价格随市场波动，以购买时实际售价为准</div>
       <div class="total-breakdown">
         <div class="breakdown-item"><span class="b-label">CPU</span><span class="b-value">¥970</span></div>
         <div class="breakdown-item"><span class="b-label">主板</span><span class="b-value">¥499</span></div>
@@ -328,7 +446,7 @@ footer a:hover{text-decoration:underline}
     </div>
     <div class="total-right">
       <div class="total-amount">¥7,899<span class="yuan"> / 整机</span></div>
-      <div class="total-note">活动价可低至 ¥7,200</div>
+      <div class="total-note">参考价</div>
     </div>
   </div>
 </div>
@@ -343,58 +461,58 @@ footer a:hover{text-decoration:underline}
     <div class="bench-grid">
       <div class="bench-game reveal">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">黑神话：悟空</div><div class="bench-setting">2K · 超高 · DLSS4 质量</div></div>
-        <div class="bench-fps"><div class="fps-num">95</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">95 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-1">
-        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">赛博朋克 2077</div><div class="bench-setting">2K · 超级 · DLSS4 质量+光追</div></div>
-        <div class="bench-fps"><div class="fps-num">89</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">赛博朋克 2077</div><div class="bench-setting">2K · 超级 · DLSS4 +光追</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">89 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-2">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">艾尔登法环</div><div class="bench-setting">2K · 高 · 原生</div></div>
-        <div class="bench-fps"><div class="fps-num">112</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">112 fps</div></div>
       </div>
       <div class="bench-game reveal">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">霍格沃茨之遗</div><div class="bench-setting">2K · 高 · DLSS4 质量</div></div>
-        <div class="bench-fps"><div class="fps-num">118</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">118 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-1">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">极限竞速：地平线5</div><div class="bench-setting">2K · 极端 · DLSS4 质量</div></div>
-        <div class="bench-fps"><div class="fps-num">132</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">132 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-2">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">怪物猎人：荒野</div><div class="bench-setting">2K · 高 · DLSS4 质量</div></div>
-        <div class="bench-fps"><div class="fps-num">108</div><div class="fps-label">fps 平均</div></div>
-      </div>
-      <div class="bench-game reveal">
-        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">永劫无间</div><div class="bench-setting">2K · 高 · DLSS4 性能</div></div>
-        <div class="bench-fps" style="background:rgba(5,150,105,0.06);border-color:rgba(5,150,105,0.15)"><div class="fps-num" style="color:var(--accent3)">196</div><div class="fps-label">fps 平均</div></div>
-      </div>
-      <div class="bench-game reveal reveal-delay-1">
-        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">绝地求生</div><div class="bench-setting">2K · 超高 · DLSS4 性能</div></div>
-        <div class="bench-fps" style="background:rgba(5,150,105,0.06);border-color:rgba(5,150,105,0.15)"><div class="fps-num" style="color:var(--accent3)">218</div><div class="fps-label">fps 平均</div></div>
-      </div>
-      <div class="bench-game reveal reveal-delay-2">
-        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">CS2 (反恐精英2)</div><div class="bench-setting">2K · 高 · DLSS4 性能</div></div>
-        <div class="bench-fps" style="background:rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.15)"><div class="fps-num" style="color:var(--accent2)">389</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">108 fps</div></div>
       </div>
       <div class="bench-game reveal">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">星空 Starfield</div><div class="bench-setting">2K · 高 · DLSS4 质量</div></div>
-        <div class="bench-fps"><div class="fps-num">103</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">103 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-1">
         <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">刺客信条：英灵殿</div><div class="bench-setting">2K · 很高 · 原生</div></div>
-        <div class="bench-fps"><div class="fps-num">128</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">128 fps</div></div>
       </div>
       <div class="bench-game reveal reveal-delay-2">
-        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">心灵杀手2</div><div class="bench-setting">2K · 高 · DLSS4 质量+光追</div></div>
-        <div class="bench-fps"><div class="fps-num">76</div><div class="fps-label">fps 平均</div></div>
+        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">永劫无间</div><div class="bench-setting">2K · 高 · DLSS4 性能</div></div>
+        <div class="bench-fps" style="background:rgba(5,150,105,0.06);border-color:rgba(5,150,105,0.15)"><span class="fps-pre" style="color:var(--accent3)">&#x2248;</span><div class="fps-num" style="color:var(--accent3)">196 fps</div></div>
+      </div>
+      <div class="bench-game reveal">
+        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">绝地求生</div><div class="bench-setting">2K · 超高 · DLSS4 性能</div></div>
+        <div class="bench-fps" style="background:rgba(5,150,105,0.06);border-color:rgba(5,150,105,0.15)"><span class="fps-pre" style="color:var(--accent3)">&#x2248;</span><div class="fps-num" style="color:var(--accent3)">218 fps</div></div>
+      </div>
+      <div class="bench-game reveal reveal-delay-1">
+        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">CS2 反恐精英2</div><div class="bench-setting">2K · 高 · DLSS4 性能</div></div>
+        <div class="bench-fps" style="background:rgba(124,58,237,0.06);border-color:rgba(124,58,237,0.15)"><span class="fps-pre" style="color:var(--accent2)">&#x2248;</span><div class="fps-num" style="color:var(--accent2)">389 fps</div></div>
+      </div>
+      <div class="bench-game reveal reveal-delay-2">
+        <div class="bench-info"><span class="bench-icon">&#x1F3AE;</span><div class="bench-name">心灵杀手2</div><div class="bench-setting">2K · 高 · DLSS4 +光追</div></div>
+        <div class="bench-fps"><span class="fps-pre">&#x2248;</span><div class="fps-num">76 fps</div></div>
       </div>
     </div>
 
     <div class="bench-tip">
       <div class="ti">&#x1F4A1;</div>
       <div>
-        <strong style="color:var(--text);font-weight:700">DLSS 4.0 多帧生成效果显著</strong> &nbsp; RTX 5060 开启 DLSS 4.0 后，帧率比 DLSS 3 提升约 40-60%，比原生帧率提升 2-3 倍。FPS 游戏（CS2、永劫无间）可稳定 200fps+，配合高刷显示器体验极佳。RTX 50 系独占 DLSS 4.0，这是 RTX 4060 无法获得的升级。
+        <strong style="color:var(--text);font-weight:700">DLSS 4.0 多帧生成效果显著</strong> &nbsp; RTX 5060 开启 DLSS 4.0 后，帧率比 DLSS 3 提升约 40-60%，比原生帧率提升 2-3 倍。FPS 游戏（CS2、永劫无间）可稳定 200fps+，配合高刷显示器体验极佳。RTX 50 系独占 DLSS 4.0，这是上代 RTX 4060 无法获得的升级。
       </div>
     </div>
   </div>
@@ -410,32 +528,32 @@ footer a:hover{text-decoration:underline}
 
     <div class="tip-card reveal">
       <div class="tip-icon">&#x1F4B0;</div>
-      <div><div class="tip-title">价格浮动说明</div><div class="tip-body">RTX 5060 目前价格在 ¥2,700-3,000 区间，波动较大。建议在 618 / 双11 大促期间入手，可省 ¥200-400。其他配件价格相对稳定。</div></div>
+      <div><div class="tip-title">价格浮动说明</div><div class="tip-body">RTX 5060 目前价格在 &#x2248;¥2,700-3,000 区间，波动较大。建议在 618 / 双11 大促期间入手。其余配件价格相对稳定，浮动在 &#x2248;5% 以内。</div></div>
     </div>
 
     <div class="tip-card reveal reveal-delay-1">
       <div class="tip-icon">&#x1F3AF;</div>
-      <div><div class="tip-title">显卡选择建议</div><div class="tip-body">华硕雪豹 RTX 5060 是双风扇版本，相比万图师散热更好、噪音更低。如果预算允许，可加 ¥100 选华硕 TUF 或 ROG 系列，散热和做工更扎实。</div></div>
+      <div><div class="tip-title">显卡选择建议</div><div class="tip-body">华硕雪豹 RTX 5060 是双风扇版本，散热和噪音控制优于公版。如果预算允许，可加 &#x2248;¥100 选华硕 TUF 系列，做工和散热更扎实，耐久度更高。</div></div>
     </div>
 
     <div class="tip-card reveal reveal-delay-2">
       <div class="tip-icon">&#x1F527;</div>
-      <div><div class="tip-title">主板供电注意</div><div class="tip-body">技嘉 B760M 有多个版本，推荐选 DS3H AX（有 WiFi）或 DS3H DDR4，供电相数 ≥ 6 相，带 i5-13400F 无压力。不要选最便宜的缩水版（如 B760M K）。</div></div>
+      <div><div class="tip-title">主板供电注意</div><div class="tip-body">技嘉 B760M 有多个版本，推荐选 DS3H AX（有 WiFi）或 DS3H DDR4，供电相数 &#x2265; 6 相，带 i5-13400F 无压力。不要选最便宜的缩水版（如 B760M K 系列）。</div></div>
     </div>
 
     <div class="tip-card reveal">
       <div class="tip-icon">&#x1F5A7;</div>
-      <div><div class="tip-title">内存频率选择</div><div class="tip-body">B760 平台默认支持 DDR4 3200MHz，购买时注意选 3200MHz 版本（会被自动超频到这个频率）。也可以加 ¥80 选 3600MHz 套装，性能稍好。</div></div>
+      <div><div class="tip-title">内存频率选择</div><div class="tip-body">B760 平台默认支持 DDR4 3200MHz，购买时注意选 3200MHz 版本（BIOS 会自动超频到此频率）。也可以加 &#x2248;¥80 选 3600MHz 套装，性能稍好一点点。</div></div>
     </div>
 
     <div class="tip-card reveal reveal-delay-1">
       <div class="tip-icon">&#x1F4BE;</div>
-      <div><div class="tip-title">硬盘升级建议</div><div class="tip-body">NV3 是金士顿入门级 PCIe 4.0 盘，缓外速度一般。如预算允许，建议加 ¥200 升级为三星 990 EVO Plus 或西数 SN850X，读写体验明显更好。</div></div>
+      <div><div class="tip-title">硬盘升级建议</div><div class="tip-body">NV3 是金士顿入门级 PCIe 4.0 盘，缓外速度一般。如预算允许，建议加 &#x2248;¥200 升级为三星 990 EVO Plus 或西数 SN850X，读写体验明显更好。</div></div>
     </div>
 
     <div class="tip-card reveal reveal-delay-2">
       <div class="tip-icon">&#x26A1;</div>
-      <div><div class="tip-title">电源建议升级</div><div class="tip-body">Acer 铜牌电源为代工产品，稳定性一般。建议加 ¥100 选长城 G6 金牌全模组（650W）或海韵 GX650，纹波控制更好，全模组方便理线。</div></div>
+      <div><div class="tip-title">电源建议升级</div><div class="tip-body">Acer 铜牌电源为代工产品，稳定性一般。建议加 &#x2248;¥100 选长城 G6 金牌全模组（650W）或海韵 GX650，纹波控制更好，全模组方便理线。</div></div>
     </div>
 
     <div class="tip-card reveal">
@@ -445,7 +563,7 @@ footer a:hover{text-decoration:underline}
 
     <div class="tip-card reveal reveal-delay-1">
       <div class="tip-icon">&#x1F9F0;</div>
-      <div><div class="tip-title">系统与驱动</div><div class="tip-body">建议安装 Windows 11 专业版。BIOS 中开启 XMP 让内存自动超频到 3200MHz。显卡驱动优先从 NVIDIA 官网下载，不要用第三方驱动软件自动更新。</div></div>
+      <div><div class="tip-title">系统与驱动</div><div class="tip-body">建议安装 Windows 11 专业版。BIOS 中开启 XMP 让内存自动超频到 3200MHz。显卡驱动优先从 NVIDIA 官网下载，不要用第三方软件自动更新驱动。</div></div>
     </div>
 
   </div>
@@ -454,7 +572,7 @@ footer a:hover{text-decoration:underline}
 <!-- CTA -->
 <div class="cta-section">
   <div class="cta-title">&#x1F389; <strong>装机愉快！</strong></div>
-  <p class="cta-sub">这套配置可以畅玩市面 99% 的 3A 游戏，兼顾日常办公和内容创作。祝装机顺利，玩得开心！</p>
+  <p class="cta-sub">这套配置畅玩市面 99% 的 3A 游戏，兼顾日常办公和内容创作。祝装机顺利，玩得开心！</p>
   <div class="cta-buttons">
     <button class="cta-btn primary" onclick="window.print()">&#x1F4B0; 保存配置单</button>
     <a href="#parts" class="cta-btn secondary">&#x1F50D; 查看配件清单</a>
@@ -470,7 +588,6 @@ footer a:hover{text-decoration:underline}
 </footer>
 
 <script>
-// Scroll reveal
 (function(){
   var els = document.querySelectorAll('.reveal');
   var io = new IntersectionObserver(function(entries){
